@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div v-if="isOpen" class="sidebar bg-[#0c3f62] w-1/5 h-screen p-4 relative text-white">
+  <div v-if="isOpen" class="sidebar bg-[#0c3f62] w-1/5 h-screen p-8 relative text-white">
     <!-- Sidebar Brand -->
     <div class="flex items-center mb-6">
       <img src="/assets/gd-logo.png" alt="logo" class="w-16 h-16">
