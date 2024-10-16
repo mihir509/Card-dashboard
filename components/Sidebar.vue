@@ -8,6 +8,7 @@ const props = defineProps({
     default: true,
   },
 });
+
 </script>
 
 <template>
@@ -74,6 +75,26 @@ const props = defineProps({
     position: fixed;
     left: 0;
     top: 0;
-  transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 99;
 }
+.closeBtn {
+  display: none;
+}
+
+@media only  screen and (max-width:1024px){
+  .sidebar{
+    width: 50%;
+  }
+  .closeBtn {
+  display: block;
+}
+}
+
+@media only  screen and (max-width:550px){
+  .sidebar{
+    width: 60%;
+  }
+}
+
 </style>

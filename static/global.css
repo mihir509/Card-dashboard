@@ -1,0 +1,17 @@
+
+.swiper-wrapper {
+    padding-bottom: 25px !important;
+    display: flex;
+    align-items: center;
+}
+.swiper-pagination span.swiper-pagination-bullet{
+    opacity: 1;
+    padding: 5px;
+    background:#0c3f62 !important;
+}
+.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+    width: 18px;
+    padding: 4px;
+    border-radius: 10px;
+    background:#0c3f62 !important;
+}

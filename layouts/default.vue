@@ -27,10 +27,16 @@ function toggleSidebar() {
     height: 100vh;
     display: flex;
 }
-.right-content{
+.dashboard:has(.sidebar + .right-content) .right-content{
  width:calc(100% - 20%);
  height: 100%;
  background-color: rgb(236 239 241);
  margin-left: auto;
+ transition: width .3s ease;
+}
+@media only screen and  (max-width:1024px){
+    .right-content{
+        width: 100% !important;
+    }
 }
 </style>

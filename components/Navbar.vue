@@ -3,10 +3,10 @@ const emit = defineEmits(['toggle-sidebar'])
 </script>
 
 <template>
-<nav class="flex justify-between items-center px-5 py-3 bg-white shadow">
+<nav class="flex justify-between items-center px-5 py-3 bg-white navbar">
     <div class="flex items-center">
         <!-- Sidebar Toggle Icon -->
-        <Icon name="heroicons:bars-3-solid" class="text-info text-3xl mr-2 cursor-pointer" size="28" @click="emit('toggle-sidebar')"  />
+        <Icon name="heroicons:bars-3-solid" class="text-info text-3xl mr-2 cursor-pointer sidebar-toggle" size="28" @click="emit('toggle-sidebar')"  />
         <span class="font-bold text-info text-2xl">Cards</span>
     </div>
     <div class="relative">
@@ -21,7 +21,6 @@ const emit = defineEmits(['toggle-sidebar'])
 
 <style scoped>
 .navbar {
-  background-color: #fff;
   box-shadow: 2px 2px 2px 2px #ccc;
 }
 
@@ -33,4 +32,11 @@ const emit = defineEmits(['toggle-sidebar'])
 button {
   outline: none;
 }
+@media only screen and  (max-width:1024px){
+  .sidebar-toggle{
+  position: absolute;
+  right: 50px;
+}
+}
+
 </style>

@@ -143,7 +143,7 @@ const saveCard = () => {
 
       <!-- Modal Body -->
       <div class="">
-        <form @submit.prevent="saveCard" class="py-4 px-8">
+        <form  class="py-4 px-8">
           <!-- Name Field -->
           <div class="mb-4">
             <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
@@ -238,7 +238,7 @@ const saveCard = () => {
               class="px-4 py-1 bg-slate-200 text-sm text-slate-700 rounded hover:bg-slate-400">
               Cancel
             </button>
-            <button type="submit" class="ml-2 px-4 py-1 text-sm bg-indigo-900 text-white rounded hover:bg-indigo-800">
+            <button type="button" class="ml-2 px-4 py-1 text-sm bg-indigo-900 text-white rounded hover:bg-indigo-800" @click="saveCard">
               Submit
             </button>
           </div>
